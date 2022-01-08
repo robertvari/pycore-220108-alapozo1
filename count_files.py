@@ -1,6 +1,7 @@
 import os
 
 # r = raw string
-files = os.listdir(r"C:\Work\_PythonSuli\pycore-220108\alapozo1")
+files = os.listdir(r"C:\Windows")
 print(files)
 print( len(files) )
+print(files[-1])
