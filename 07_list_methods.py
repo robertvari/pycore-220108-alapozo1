@@ -1,6 +1,9 @@
 my_name = "Robert Vari"
 names = ["Robert", "Kriszta", "Csaba", "Robert", my_name]
 
+# count same items in list
+print(names.count("Robert"))
+
 # add item to list
 names.append("Balázs")
 names.append("Tom")
