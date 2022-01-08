@@ -13,3 +13,8 @@ print(phonebook["+36 20 653 7865"]["name"])
 print(phonebook["+36 20 653 7865"]["address"])
 print(phonebook["+36 20 653 7865"]["email"])
 print(phonebook["+36 20 653 7865"]["age"])
+
+print(phonebook.keys())
+
+# cast dictionary to list
+print( list(phonebook) )

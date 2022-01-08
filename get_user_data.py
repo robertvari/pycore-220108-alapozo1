@@ -5,3 +5,4 @@ phone = input("Phone?")
 email = input("Email?")
 
 phonebook[phone] = {"name": name, "email": email}
+print(phonebook)
