@@ -1,4 +1,5 @@
-names = ["Robert", "Kriszta", "Csaba", "Robert"]
+my_name = "Robert Vari"
+names = ["Robert", "Kriszta", "Csaba", "Robert", my_name]
 
 # add item to list
 names.append("Balázs")
@@ -20,4 +21,7 @@ print(names)
 
 # removes the first occurrence
 names.remove("Robert")
+print(names)
+
+names.clear()
 print(names)
