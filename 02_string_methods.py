@@ -13,3 +13,7 @@ print("robert vari. i live in budapest.".title())
 print("My name is Robert Vari.".replace("Robert", "Csaba"))
 print("My name is Robert Vari.".replace("Robert Vari", "Csaba Kiss"))
 print("My name is Robert Vari.".replace("a", "X"))
+
+# split strings
+print("My name is Robert Vari.".split())
+print("My name is Robert Vari.".split("is"))
