@@ -15,4 +15,5 @@ True, False
 # this is bad!
 'It's my job'
 
-# ...
+# lists
+[1, 3, 4, "Robert", "Csaba", 3.14]
