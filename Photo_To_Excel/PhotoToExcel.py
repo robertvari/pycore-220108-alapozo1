@@ -26,4 +26,7 @@ for file in photos:
     img = Image.open(photo_path)
     photo_data += f"{file} {img.size}\n"
 
-print(photo_data)
+
+# create the photo_data.txt and write the data
+with open("photo_data.txt", "w") as f:
+    f.write(photo_data)
