@@ -1,4 +1,5 @@
 import os
+from PIL import Image
 
 # open photo folder and list content
 photo_folder = r"C:\Work\_PythonSuli\pycore-220108\photos"
@@ -17,3 +18,8 @@ for i in files:
     photos.append(i)
 
 # open images with PIL == Pillow
+for file in photos:
+    photo_path = os.path.join(photo_folder, file)
+
+    img = Image.open(photo_path)
+    print(file, img.size)
