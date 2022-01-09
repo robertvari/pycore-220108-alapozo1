@@ -19,3 +19,6 @@ print(phonebook["+36 20 653 9876"])
 
 del phonebook["+36 20 653 9876"]
 print(phonebook)
+
+print(phonebook.keys())
+print(phonebook.values())
