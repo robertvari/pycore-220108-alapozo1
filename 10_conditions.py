@@ -1,4 +1,9 @@
-number = 5
+number = 1
 
 if number == 5:
-    print("The number is 5")
+    # condition block
+    print("The number is 5.")
+
+if number != 5:
+    # condition block
+    print("The number is not 5.")
