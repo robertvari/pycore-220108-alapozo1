@@ -11,7 +11,7 @@ print(f"You have {max_tries} tries.")
 
 user_guess = input("Your guess?")
 
-while user_guess != magic_number:
+while user_guess != str(magic_number):
     # bad guess
     max_tries -= 1
 

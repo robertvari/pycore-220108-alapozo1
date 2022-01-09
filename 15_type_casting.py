@@ -1,5 +1,5 @@
-number1 = 5
-number2 = int("5")
+number1 = str(5)
+number2 = "5"
 
 
 print(number1 == number2)
