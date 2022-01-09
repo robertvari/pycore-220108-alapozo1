@@ -1,5 +1,5 @@
 import os
-from PIL import Image
+from PIL import Image, ExifTags
 import json
 
 # open photo folder and list content
@@ -33,6 +33,18 @@ for file in photos:
         "camera": None,
         "iso": None
     }
+
+    # get exif data
+    exif_data = img._getexif()
+    if not exif_data:
+        continue
+
+    for key, value in exif_data.items():
+        tag_name = ExifTags.TAGS.get(key)
+        print(tag_name, value)
+
+
+    photo_data[file]["date"] = exif_data[306]
 
 
 # create the photo_data.txt and write the data
