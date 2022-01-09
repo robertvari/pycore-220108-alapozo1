@@ -1,6 +1,6 @@
 min_number = 1
 max_number = 10
-max_tries = 3
+max_tries = 5
 
 magic_number = 5
 
@@ -22,3 +22,8 @@ while user_guess != str(magic_number):
 
     print(f"Wrong answer. You have {max_tries} tries lef.")
     user_guess = input("Your guess?")
+
+if user_guess == str(magic_number):
+    print(f"You win! My number was {magic_number}")
+else:
+    print("Game over man....")
