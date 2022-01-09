@@ -28,5 +28,6 @@ for file in photos:
 
 
 # create the photo_data.txt and write the data
-with open("photo_data.txt", "w") as f:
+data_file_path = os.path.join(photo_folder, "photo_data.txt")
+with open(data_file_path, "w") as f:
     f.write(photo_data)
