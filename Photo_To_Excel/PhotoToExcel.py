@@ -1,5 +1,6 @@
 import os
 from PIL import Image
+import json
 
 # open photo folder and list content
 photo_folder = r"C:\Work\_PythonSuli\pycore-220108\photos"
@@ -18,16 +19,23 @@ for i in files:
     photos.append(i)
 
 # open images with PIL == Pillow
-photo_data = ""
+photo_data = {}
 
 for file in photos:
     photo_path = os.path.join(photo_folder, file)
 
     img = Image.open(photo_path)
-    photo_data += f"{file} {img.size}\n"
+    photo_data[file] = {
+        "x": img.size[0],
+        "y": img.size[1],
+        "path": photo_path,
+        "date": None,
+        "camera": None,
+        "iso": None
+    }
 
 
 # create the photo_data.txt and write the data
-data_file_path = os.path.join(photo_folder, "photo_data.txt")
+data_file_path = os.path.join(photo_folder, "photo_data.json")
 with open(data_file_path, "w") as f:
-    f.write(photo_data)
+    json.dump(photo_data, f)
