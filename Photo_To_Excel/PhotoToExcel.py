@@ -18,8 +18,12 @@ for i in files:
     photos.append(i)
 
 # open images with PIL == Pillow
+photo_data = ""
+
 for file in photos:
     photo_path = os.path.join(photo_folder, file)
 
     img = Image.open(photo_path)
-    print(file, img.size)
+    photo_data += f"{file} {img.size}\n"
+
+print(photo_data)
